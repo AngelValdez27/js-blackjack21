@@ -1,0 +1,158 @@
+html,body{
+    margin: 0px;
+   /* background-color: #0F4135;*/
+    background-color: #113438;
+    color: #fff;
+    box-sizing: border-box;/*Hack box-model (Evita el crecimiento de un contenedor si se la añade un padding)*/
+   font-family: sans-serif;
+}
+.row {
+    --bs-gutter-x: 0;
+}
+  
+.titulo{
+text-align: center;
+background-color: #111111;
+color: #fff;
+padding: 20px;
+}
+.fs-titulo{
+    font-size: 2rem;
+}
+
+.div-cartas{
+    /* background-color: #025B45; */
+    background-color: #244448;
+    border: #fff solid 2px;
+    border-radius: 10px;
+}
+.div-carta-deck{
+    position: relative;
+    width: fit-content;
+    border-radius: 5px;
+    background-color: #fff;
+
+    /* shadow */
+  /*   -webkit-box-shadow: 0px 9px 0px 0px rgb(138, 135, 135);
+    -moz-box-shadow: 0px 9px 0px 0px rgb(138, 135, 135);
+    box-shadow: 0px 9px 0px 0px rgb(138, 135, 135); */
+    -webkit-box-shadow: 0px 9px 0px 0px rgba(245,245,245,1);
+    -moz-box-shadow: 0px 9px 0px 0px rgba(245,245,245,1);
+    box-shadow: 0px 9px 0px 0px rgba(245,245,245,1);
+}
+.deck{
+    position: relative;
+    width: 115px;
+}
+.carta-deck{
+    position: absolute;
+    width: 115px;
+}
+.carta-mostrada{
+    position: relative;
+    left: 10%;
+    width: 17%;
+}
+.carta-l{
+    left: 19%;
+}
+
+.carta{
+    margin-left: -55px;
+}
+.carta-oculta{
+    position: absolute;
+    left: 17%;
+    width: 8.6%;
+    transition: 1200ms;
+    backface-visibility: hidden;
+}
+.front{
+    transform: perspective(500px) rotateY(0deg);
+}
+.back{
+    transform: perspective(500px) rotateY(180deg);
+}
+
+/* #casa-cartas:hover .front{
+    transform: perspective(500px) rotateY(180deg);
+}
+
+#casa-cartas:hover .back{
+    transform: perspective(500px) rotateY(360deg);
+} */
+
+.front-turn{
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.back-turn{
+    transform: perspective(500px) rotateY(360deg);
+}
+
+
+
+#casa-cartas, #jugador-cartas{
+    height: 30vh;
+
+}
+
+.container-div-botones{
+    width: 100%;
+}
+.border-alert{
+    border: 6px solid #005964;
+}
+.icon-color{
+    color: #fff;
+}
+.icon-alert-color{
+    color: #003036;
+}
+.title-alert{
+    font-size: 1.5rem;
+    color: #383838;
+}
+.message{
+    font-size: 2.5rem;
+    color: #2b2b2b;
+}
+.p-style{
+    margin: 0;
+    color: #fff;
+}
+.btn-jugador{
+    cursor: pointer;
+    margin: auto 5px;
+    width: 90px;
+    height: 90px;
+    border-radius: 100px;
+    border: 2px solid #fff;
+    transition: 500ms all;
+}
+.btn-nuevo-juego{
+    /* background-color: #013d5fd2;  */ 
+    /* background: rgb(1,61,95);
+    background: linear-gradient(180deg, rgba(1,61,95,0.4413038961003336) 0%, rgba(18,117,173,0.8486072668868504) 35%, rgba(1,61,95,0.9497308623924684) 68%, rgba(1,61,95,1) 100%); */
+    background: rgb(4,123,191);
+    background: linear-gradient(180deg, rgba(4,123,191,1) 0%, rgba(4,105,163,1) 35%, rgba(2,82,127,1) 68%, rgba(1,61,95,1) 100%);
+
+}
+.btn-pedir-carta{
+    /* background-color: #0e5a41;  */ 
+    background: rgb(29,179,129);
+    background: linear-gradient(180deg, rgba(29,179,129,1) 0%, rgba(24,146,105,1) 35%, rgba(18,108,78,1) 68%, rgba(14,90,65,1) 100%);
+}
+.btn-detener{
+    /* background-color: #771212;*/
+    background: rgb(208,43,43);
+    background: linear-gradient(180deg, rgba(208,43,43,1) 0%, rgba(171,36,36,0.8008544578980864) 35%, rgba(151,28,28,0.8963600758756145) 68%, rgba(119,18,18,1) 100%);
+
+} 
+
+.btn-jugador:active{
+    transform: scale(0.9);
+}
+.btn-jugador:disabled{
+    opacity: 0.3;
+}
