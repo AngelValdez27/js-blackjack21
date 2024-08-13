@@ -156,3 +156,6 @@ padding: 20px;
 .btn-jugador:disabled{
     opacity: 0.3;
 }
+.author{
+    font-size: 0.8rem;
+}
