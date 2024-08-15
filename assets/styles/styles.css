@@ -1,4 +1,5 @@
 html,body{
+    height: 100%;
     margin: 0px;
    /* background-color: #0F4135;*/
     background-color: #113438;
@@ -15,6 +16,18 @@ text-align: center;
 background-color: #111111;
 color: #fff;
 padding: 20px;
+}
+.footer{
+    padding: 40px 10px 1px 10px;
+}
+.img-footer-formas{
+    width: 20%;
+}
+
+.img-footer-fichas {
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 30px; /* Asegura que la imagen ocupe todo el ancho disponible dentro de su contenedor */
 }
 .fs-titulo{
     font-size: 2rem;
@@ -158,4 +171,115 @@ padding: 20px;
 }
 .author{
     font-size: 0.8rem;
+    margin: 0px;
+    color: #e6e6e671;
+}
+
+/* RESPONSIVE */
+
+@media (min-width:1440px) {
+    .carta-oculta{
+        width: 9%;
+    }
+    .deck{
+        width: 125px;
+    }
+    .carta-deck{
+        width: 125px;
+    }
+}
+
+/* @media (max-width:1366px) {
+    .carta-oculta{
+        width: 9%;
+    }
+    .deck{
+        width: 125px;
+    }
+    .carta-deck{
+        width: 125px;
+    }
+} */
+ 
+
+@media (max-width:1024px) {
+    .carta-oculta{
+        width: 9.2%;
+    }
+    .deck{
+        width: 96px;
+    }
+    .carta-deck{
+        width: 96px;
+    }
+}
+
+@media (max-width:768px) {
+    .carta-mostrada{
+        width: 24%;
+    }
+    .carta-oculta{
+        width: 13%;
+        left: 19%;
+    }
+    .deck{
+        width: 106px;
+    }
+    .carta-deck{
+        width: 106px;
+    }
+
+    .btn-jugador{
+        width: 70px;    
+        height: 70px;
+    }
+
+    .p-style{
+        font-size: 0.6rem;
+    }
+
+    .fa-xl{
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 426px) {
+    .div-carta-deck{
+        display: none;
+    }
+    .carta-deck{
+        display: none;
+    }
+    .carta{
+        margin-left: -48px;
+    }
+    .carta-mostrada{
+        left: 16%;
+    }
+    .carta-oculta{
+        width: 23.7%;
+        left: 28%;
+    }
+    .carta-l{
+        left: 28%;
+    }
+    .img-footer-formas{
+        width: 40%;
+        margin: 8px 0px;
+    }
+}
+
+@media (max-width: 320px) {
+    /* .div-carta-deck{
+        display: none;
+    }
+    .carta-deck{
+        display: none;
+    } */
+    .carta-mostrada{
+        width: 28%;
+    }
+    .carta-oculta{
+        width: 27.6%;
+    }
 }
