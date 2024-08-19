@@ -243,7 +243,46 @@ padding: 20px;
     }
 }
 
+@media (max-width:715px) {
+    .container{
+        max-width: 600px;
+    }
+    .div-carta-deck{
+        display: none;
+    }
+    .carta-deck{
+        display: none;
+    }
+    #casa-cartas, #jugador-cartas {
+        height: 22vh;
+    }
+ 
+}
+
+
+@media (max-width: 536px) {
+    .carta{
+        margin-left: -51px;
+    }
+    .carta-mostrada{
+        left: 13%;
+    }
+    .container{
+        max-width: 540px;
+    }
+    .carta-oculta{
+        width: 23.5%;
+        left: 26%;
+    }
+    .carta-l{
+        left: 25%;
+    }
+}
+
 @media (max-width: 426px) {
+   /*  .container{
+        max-width: 540px;
+    } */
     .div-carta-deck{
         display: none;
     }
